@@ -8,7 +8,7 @@ BTC:  1NPrfWgJfkANmd1jt88A141PjhiarT8d9U
 0. Requirements
 
  * Blockchain.info account with nodeJS wallet service running
-    Guide to setting up the nodeJS wallet service http://btcthreads.com/how-to-setup-blockchain-wallet-service/
+  *  Need a guide to setting up the nodeJS wallet service? http://btcthreads.com/how-to-setup-blockchain-wallet-service/
  
 1. Download or clone the main project and extract files.
 
@@ -39,12 +39,12 @@ Create a new receiving address (label is optional)
 Basic send payment
  
 		$pmt = $bci->send("1J9ikqFuwrzPbczsDkquA9uVYeq6dEehsj", 100000);
-		print_r($send);
+		print_r($pmt);
 		
-Advanced send payment with From, Fee and Note options
+Advanced send payment with From, Custom Fee and Note options
  
 		$pmt = $bci->send("1J9ikqFuwrzPbczsDkquA9uVYeq6dEehsj", 100000, "1FromThisSpecifAddressab324", 10000, "Thanks for using mysite.com");
-		print_r($send);
+		print_r($pmt);
 		
 Send Many
  
