@@ -2,11 +2,8 @@
 
 Simple PHP library that allows simple communication to the localhost nodeJS wallet service. 
 
-<<<<<<< HEAD
-=======
 BTC:  1NPrfWgJfkANmd1jt88A141PjhiarT8d9U
 
->>>>>>> origin/features
 # Usage
 0. Requirements
 
@@ -29,27 +26,27 @@ BTC:  1NPrfWgJfkANmd1jt88A141PjhiarT8d9U
 		
 3. Start making calls
 
- * check wallet balance
+Check wallet balance
 
         $balance = $bci->balance();
 		print_r($balance);
 
- * create a new receiving address (label is optional)
+Create a new receiving address (label is optional)
  
 		$new = $bci->new_address("my_label");
 		print_r($new);
 		
- * basic send payment
+Basic send payment
  
 		$pmt = $bci->send("1J9ikqFuwrzPbczsDkquA9uVYeq6dEehsj", 100000);
 		print_r($send);
 		
- * advanced send payment with From, Fee and Note options
+Advanced send payment with From, Fee and Note options
  
 		$pmt = $bci->send("1J9ikqFuwrzPbczsDkquA9uVYeq6dEehsj", 100000, "1FromThisSpecifAddressab324", 10000, "Thanks for using mysite.com");
 		print_r($send);
 		
- * send_many
+Send Many
  
 		$array = array(
 			"1someAddress" => 20000,
@@ -60,8 +57,3 @@ BTC:  1NPrfWgJfkANmd1jt88A141PjhiarT8d9U
 		print_r($send);
 	
 		
-<<<<<<< HEAD
-		
-=======
-		
->>>>>>> origin/features
